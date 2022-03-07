@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/* ----- header ----- */
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.home {
+    font-family: "Abril Fatface", cursive;
+}
+
+.home a {
+    text-decoration: none;
+}
+
+.home a:visited {
+    color: black;
+}
+
+.sns-list {
+    font-family: "Abril Fatface", cursive;
+    list-style-type: none;
+    display: flex;
+    margin: auto 0;
+}
+
+.sns-list li {
+    text-decoration: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.main-image {
+    max-width: 100%;
+}
+
+/* ----- main ----- */
+
+.main-title {
+    font-family: "Abril Fatface", cursive;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.main-body {
+    display: flex;
+    max-width: 80vw;
+    margin: 20px auto 40px;
+}
+
+.main-body img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.main-body p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 40px;
+}
+
+/* ----- footer ----- */
+
+footer .wrapper {
+    background-color: black;
+    padding: 20px;
+    max-width: 100%;
+}
+
+footer .wrapper p {
+    color: white;
+    font-size: x-small;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    /* 767px以下の場合 */
+    header .wrapper {
+        flex-direction: column;
+    }
+
+    .home {
+        margin:0 auto 25px;
+    }
+
+    .sns-list {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* 767px以下の場合 */
+    .main-title {
+        margin: 50px auto 30px;
+    }
+
+    .main-body {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 40px;
+    }
+
+    .main-body img {
+        margin: 0 auto 30px;
+    }
+
+    .main-body p {
+        margin: 0 auto;
+    }
+}
+
+
+
