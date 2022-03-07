@@ -39,21 +39,6 @@ header .wrapper {
     max-width: 100%;
 }
 
-@media screen and (max-width: 767px) {
-    /* 767px以下の場合 */
-    header .wrapper {
-    flex-direction: column;
-    }
-
-    .home {
-    margin:0 auto 25px;
-    }
-
-    .sns-list {
-    justify-content: flex-end;
-    }
-}
-
 /* ----- main ----- */
 
 .main-title {
@@ -81,27 +66,6 @@ header .wrapper {
     margin-left: 40px;
 }
 
-@media screen and (max-width: 767px) {
-    /* 767px以下の場合 */
-    .main-title {
-    margin: 50px auto 30px;
-    }
-
-    .main-body {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto 40px;
-    }
-
-    .main-body img {
-    margin: 0 auto 30px;
-    }
-
-    .main-body p {
-    margin: 0 auto;
-    }
-}
-
 /* ----- footer ----- */
 
 footer .wrapper {
@@ -115,3 +79,42 @@ footer .wrapper p {
     font-size: x-small;
     text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+    /* 767px以下の場合 */
+    header .wrapper {
+        flex-direction: column;
+    }
+
+    .home {
+        margin:0 auto 25px;
+    }
+
+    .sns-list {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* 767px以下の場合 */
+    .main-title {
+        margin: 50px auto 30px;
+    }
+
+    .main-body {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 40px;
+    }
+
+    .main-body img {
+        margin: 0 auto 30px;
+    }
+
+    .main-body p {
+        margin: 0 auto;
+    }
+}
+
+
+
